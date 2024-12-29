@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* 管理系统CSS样式调整 */
+/* Universal selector for removing default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置背景和基本字体样式 */
+body {
+    font: 16px/1.8 'Arial', sans-serif;
+    background: #e0f7fa url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* 链接的基本样式和悬停样式 */
+a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004d40;
+    text-decoration: underline;
+}
+
+/* 登录窗口样式 */
+.admin_login_wrap {
+    margin: 100px auto;
+    width: 350px;
+}
+
+/* 登录标题样式 */
+.admin_login_wrap h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 登录框样式 */
+.adming_login_border {
+    box-shadow: 2px 3px 5px #aaa;
+    border: 1px solid #bbb;
+    background: #ffffff;
+    padding: 10px 10px 20px;
+    overflow: hidden;
+}
+
+/* 输入框样式 */
+.admin_input {
+    margin: 20px auto 0;
+    width: 300px;
+}
+
+/* 列表和标签的样式 */
+.admin_items li {
+    line-height: 32px;
+    margin-bottom: 10px;
+    list-style: none;
+    clear: both;
+}
+
+.admin_input label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* 输入框的基础和聚焦样式 */
+.admin_input_style {
+    border: 1px solid #b0bec5;
+    background: #ffffff;
+    padding: 5px;
+    height: 32px;
+    line-height: 32px;
+    font-family: 'Arial', sans-serif;
+    color: #37474f;
+    border-radius: 6px;
+    transition-duration: 0.3s;
+}
+
+.admin_input_style:focus {
+    border-color: #4dd0e1;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 188, 212, 0.6);
+    background: #e0f7fa;
+}
+
+/* 按钮的基础和悬停样式 */
+.btn {
+    display: inline-block;
+    padding: 14px 16px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #212121;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #b2dfdb;
+    background-image: linear-gradient(to bottom, #ffffff, #b2dfdb);
+    border: 1px solid #80cbc4;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+    color: #212121;
+    background-color: #80cbc4;
+}
+
+.btn-primary {
+    width: 100%;
+    color: #ffffff;
+    background-color: #00796b;
+    background-image: linear-gradient(to bottom, #00897b, #00695c);
+    border-color: #00695c #00695c #004d40;
+}
+
+.btn-primary:hover {
+    background-color: #004d40;
+}
+
+.admin_copyright {
+    color: #455a64;
+    margin-top: 15px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.admin_copyright a:link,
+.admin_copyright a:visited {
+    color: #0288d1;
+}
+
+.admin_copyright a:hover {
+    color: #01579b;
+}
